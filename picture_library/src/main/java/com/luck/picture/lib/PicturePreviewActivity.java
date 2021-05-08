@@ -1,6 +1,7 @@
 package com.luck.picture.lib;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -483,5 +484,31 @@ public class PicturePreviewActivity extends PictureBaseActivity implements
     @Override
     public void onActivityBackPressed() {
         onBackPressed();
+    }
+
+    @Override
+    protected void onResume() {
+        registerReceiver();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        unregisterReceiver();
+        super.onPause();
+    }
+
+    private KeyReceiver keyReceiver;
+
+    private void registerReceiver() {
+        keyReceiver = new KeyReceiver();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("android.rfid.FUN_KEY");
+        filter.addAction("android.intent.action.FUN_KEY");
+        registerReceiver(keyReceiver , filter);
+    }
+
+    private void unregisterReceiver(){
+        unregisterReceiver(keyReceiver);
     }
 }
