@@ -7,6 +7,9 @@
     android:orientation="vertical">
 
     <ImageView
+        android:padding="1dp"
+        android:focusable="true"
+        android:background="@drawable/btn_back_focus_style"
         android:id="@+id/camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

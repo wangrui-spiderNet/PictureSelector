@@ -18,6 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:padding="15dp"
+            android:focusable="true"
+            android:background="@drawable/btn_back_focus_style"
             android:src="?attr/picture.leftBack.icon" />
 
         <TextView
@@ -44,6 +46,8 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="@string/picture_cancel"
+            android:focusable="true"
+            android:background="@drawable/btn_back_focus_style"
             android:textColor="?picture.right.textColor"
             android:textSize="14sp" />
     </RelativeLayout>

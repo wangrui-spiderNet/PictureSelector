@@ -18,6 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:padding="15dp"
+            android:focusable="true"
+            android:background="@drawable/btn_back_focus_style"
             android:src="?attr/picture.preview.leftBack.icon" />
 
         <TextView
@@ -47,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/picture.checked.style"
                 android:gravity="center"
+                android:focusable="true"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -83,7 +86,7 @@
                 android:background="?attr/picture.num.style"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="@color/white"
+                android:textColor="@drawable/text_select1"
                 android:textSize="12sp"
                 android:visibility="invisible" />
 
@@ -95,6 +98,8 @@
                 android:gravity="center|left"
                 android:paddingRight="12dp"
                 android:text="请选择"
+                android:focusable="true"
+                android:background="@drawable/btn_back_focus_style"
                 android:textColor="?attr/picture.ac_preview.complete.textColor"
                 android:textSize="14sp" />
 
