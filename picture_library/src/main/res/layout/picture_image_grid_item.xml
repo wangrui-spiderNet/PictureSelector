@@ -31,8 +31,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/picture.checked.style"
             android:gravity="center"
-            android:padding="1dp"
-            android:duplicateParentState="true"
+            android:focusable="true"
             android:textColor="@color/white"
             android:textSize="12sp" />
     </LinearLayout>
