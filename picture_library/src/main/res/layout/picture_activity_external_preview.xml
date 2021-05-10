@@ -17,7 +17,7 @@
             android:layout_width="48dp"
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
-            android:background="@color/transparent"
+            android:background="@drawable/btn_back_focus_style"
             android:src="?attr/picture.preview.leftBack.icon"
             android:visibility="visible" />
 

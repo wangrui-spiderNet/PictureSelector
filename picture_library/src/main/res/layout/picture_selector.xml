@@ -43,6 +43,8 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:enabled="false"
+            android:focusable="true"
+            android:background="@drawable/btn_back_focus_style"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -66,8 +68,6 @@
                 android:paddingRight="12dp"
                 android:text="@string/picture_please_select"
                 android:textColor="?attr/picture.complete.textColor"
-                android:focusable="true"
-                android:background="@drawable/btn_back_focus_style"
                 android:textSize="14sp" />
 
         </LinearLayout>
